@@ -1,0 +1,35 @@
+{
+    "namespace" : "com.example.avrocdrgen.types",
+    "type" : "record",
+    "name" : "CDRFileGeneratedEvent",
+    "fields" : [
+        {
+            "name" : "resellerId",
+            "type" : [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "name" : "customerId",
+            "type" : [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "name" : "cdrFiles",
+            "type" : {
+                "type" : "array",
+                "items" : "CDRFile"
+            }
+        },
+        {
+            "name" : "sourceFTP",
+            "type" : [
+                "null",
+                "FTPInfo"
+            ]
+        }
+    ]
+}

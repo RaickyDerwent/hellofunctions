@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    function:
+      definition: getProducts
+    stream:
+      bindings:
+        getProducts-out-0:
+          producer:
+            valueSerde: io.confluent.kafka.serializers.KafkaAvroSerializer
+          binder: kafka
+          destination: cdrFileGeneratedEvent
+      kafka:
+        streams:
+          binder:
+            applicationId: hellostreams
+            brokers: localhost:9092
+

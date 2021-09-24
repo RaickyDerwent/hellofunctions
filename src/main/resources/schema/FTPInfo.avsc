@@ -1,0 +1,21 @@
+{
+    "namespace" : "com.example.avrocdrgen.types",
+    "type" : "record",
+    "name" : "FTPInfo",
+    "fields" : [
+        {
+            "name" : "host",
+            "type" : [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "name" : "path",
+            "type" : [
+                "null",
+                "string"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "namespace" : "com.example.avrocdrgen.types",
+    "type" : "record",
+    "name" : "CDRFile",
+    "fields" : [
+        {
+            "name" : "fileName",
+            "type" : [
+                "null",
+                "string"
+            ]
+        }
+    ]
+}
